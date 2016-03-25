@@ -11,7 +11,7 @@ var root = path.resolve(process.argv[2] || '.');
 
 console.log('Static root dir: ' + root);
 
-// 创建服务器:
+// 创建服务器: 
 var server = http.createServer(function (request, response) {
     // 获得URL的path，类似 '/css/bootstrap.css':
     var pathname = url.parse(request.url).pathname;
